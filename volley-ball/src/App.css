@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+.App__form{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.App__form button{
+  width: 100px;
+}
+.App__form-elements{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.App__individual-input{
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+
+}
+
+.App__display-game-outcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:10px;
+  padding: 30px;
+}
