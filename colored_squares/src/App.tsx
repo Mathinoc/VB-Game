@@ -1,11 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import HomeView from './views/HomeView';
 
 function App() {
   return (
     <div className="App">
-      Try
+      <HomeView />
     </div>
   );
 }
