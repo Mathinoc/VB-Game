@@ -18,5 +18,5 @@ The only requirement (like all games) is that both probabilities cannot equal 1.
 To run the tests: run `npm test`from the volley-ball folder.
 
 Three test suites (unit tests) have been created:
-- APP.test.js to test that the client is rendering correctly
+- App.test.js to test that the client is rendering correctly
 - volleyBall.test.js to test the four functions of the program (isPoint, isSetFinished, isVictory, volleyBall)
