@@ -13,7 +13,6 @@ function App() {
     const probabiltyTeam2 = parseFloat(prob2.current!.value);
     const gameResult = volleyBall(probabiltyTeam1, probabiltyTeam2)
     setGameOutCome(gameResult);
-    console.log(gameResult)
   }
 
   return (
