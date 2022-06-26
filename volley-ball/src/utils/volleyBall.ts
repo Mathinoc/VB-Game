@@ -25,7 +25,7 @@ export default function volleyBall(prob1: number, prob2: number) {
   return listScores
 }
 
-function isVictory(setStack: Array<number[]>) {
+export function isVictory(setStack: Array<number[]>) {
   if (setStack.length < 3) {
     return false
   } else if (setStack.length === 5) {
@@ -44,7 +44,7 @@ function isVictory(setStack: Array<number[]>) {
   return Math.abs(setCount) === 2 ? true : false
 }
 
-function isSetFinished(currentPoint: Array<number>, numberOfSet: number) {
+export function isSetFinished(currentPoint: Array<number>, numberOfSet: number) {
 
   const scoreTeam1 = currentPoint[0], scoreTeam2 = currentPoint[1];
   if (numberOfSet < 4) {
@@ -62,7 +62,7 @@ function isSetFinished(currentPoint: Array<number>, numberOfSet: number) {
   return Math.abs(scoreTeam1 - scoreTeam2) >= 2 ? true : false
 }
 
-function isPoint(prob: number) {
+export function isPoint(prob: number) {
   const probInfluence = Math.random();
   return probInfluence > (1 - prob) ? true : false;
 }

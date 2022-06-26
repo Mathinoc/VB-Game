@@ -2,9 +2,8 @@ import { useRef, useState } from 'react';
 import './App.css';
 import volleyBall from './utils/volleyBall';
 
-
-
 function App() {
+  const [gameOutCome, setGameOutCome] = useState<string[]>();
   const prob1 = useRef<HTMLInputElement>(null);
   const prob2 = useRef<HTMLInputElement>(null);
 
@@ -16,8 +15,6 @@ function App() {
     setGameOutCome(gameResult);
     console.log(gameResult)
   }
-
-  const [gameOutCome, setGameOutCome] = useState<string[]>();
 
   return (
     <div className="App">
@@ -35,6 +32,7 @@ function App() {
         </div>
         <button type="submit">Start Game</button>
       </form>
+
       <div className="App__display-game-outcome">
         {gameOutCome &&
           gameOutCome.map((set, index) => (
